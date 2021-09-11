@@ -1,0 +1,18 @@
+{
+    "scriptFile": "bot.py",
+    "bindings": [
+        {
+            "name": "request",
+            "direction": "in",
+            "authLevel": "anonymous",
+            "type": "httpTrigger",
+            "methods": ["get", "post"],
+            "route": "v1/bot/{token}"
+        },
+        {
+            "type": "http",
+            "name": "$return",
+            "direction": "out"
+        }
+    ]
+}
